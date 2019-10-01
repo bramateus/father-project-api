@@ -73,27 +73,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 
-$db['zeus'] = array(
-    'dsn'	=> '',
-    'hostname' => 'pleskdb.cxt9ad1y00cb.us-east-1.rds.amazonaws.com',
-    'username' => 'synapselabs_user',
-    'password' => 'pUji9&07',
-    'database' => 'synapselabs_db',
-    'dbdriver' => 'mysqli',
-    'dbprefix' => '',
-    'pconnect' => FALSE,
-    'db_debug' => (ENVIRONMENT !== 'production'),
-    'cache_on' => FALSE,
-    'cachedir' => '',
-    'char_set' => 'utf8',
-    'dbcollat' => 'utf8_general_ci',
-    'swap_pre' => '',
-    'encrypt' => FALSE,
-    'compress' => FALSE,
-    'stricton' => FALSE,
-    'failover' => array(),
-    'save_queries' => TRUE
-);
 
 $db['default'] = array(
 	'dsn'	=> '',
