@@ -89,10 +89,13 @@ class Principal extends CI_Controller
 
         // print_r(count($leads));
         if($this->Principal_model->salvaLead($leads)) {
-            print_r(count($leads).' Registros Inseridos no Banco');
+            print_r(count($leads).' Registros Inseridos no Banco ');
             print_r('<br>');
         }
 
+
+
+        $tres = 3;
         
 
 
@@ -100,7 +103,7 @@ class Principal extends CI_Controller
 
 
 
-         $this->load->view("paginas/projeto_detalhes", compact("fifteen_days","fifteen_days"));
+         $this->load->template("paginas/calendar", compact("fifteen_days","fifteen_days","tres"));
          // $this->load->template("index", compact("fifteen_days","fifteen_days"));
 
         // $model[0] = $this->Principal_model->listaDepoimentos();
